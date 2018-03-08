@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>知名电商企业</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="111.css" type="text/css" rel="stylesheet"/>
+
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+
+        body {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            color: #5a5a5a;
+        }
+
+        /* 轮播广告 */
+
+        .carousel {
+            height: 500px;
+            margin-bottom: 60px;
+        }
+
+        .carousel .item {
+            height: 500px;
+            background-color: #000;
+        }
+
+        .carousel .item img {
+            width: 100%;
+        }
+
+        .carousel-caption {
+            z-index: 10;
+        }
+
+        .carousel-caption p {
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        /* 简介 */
+
+        .summary {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .summary .col-md-4 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* 特性 */
+
+        .feature-divider {
+            margin: 40px 0;
+        }
+
+        .feature {
+            padding: 30px 0;
+        }
+
+        .feature-heading {
+            font-size: 50px;
+            color: #2a6496;
+        }
+
+        .feature-heading .text-muted {
+            font-size: 28px;
+        }
+
+        /* 响应式布局 */
+
+        @media (max-width: 768px) {
+
+            .summary {
+                padding-right: 3px;
+                padding-left: 3px;
+            }
+
+            .carousel {
+                height: 300px;
+                margin-bottom: 30px;
+            }
+
+            .carousel .item {
+                height: 300px;
+            }
+
+            .carousel img {
+                min-height: 300px;
+            }
+
+            .carousel-caption p {
+                font-size: 16px;
+                line-height: 1.4;
+            }
+
+            .feature-heading {
+                font-size: 34px;
+            }
+
+            .feature-heading .text-muted {
+                font-size: 22px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .feature-heading {
+                margin-top: 120px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+<!-- 顶部导航 -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">知名电商企业</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#ad-carousel">综述</a></li>
+                <li><a href="#summary-container">简述</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">特点 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#feature-tab" data-tab="tab-chrome">阿里巴巴</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-firefox">京东</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-safari">苏宁易购</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- 广告轮播 -->
+<div id="ad-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#ad-carousel" data-slide-to="1"></li>
+        <li data-target="#ad-carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="images/阿里巴巴.jpg" alt="1 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>阿里巴巴</h1>
+
+                    <p> 阿里巴巴（Alibaba.com 
+
+）是全球企业间（B2B）电子商务的著名品牌,是目前全球最大的网上交易市场和商务交流社区。
+</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="https://www.1688.com/"
+                          role="button" target="_blank">点我进入</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/京东.jpg" alt="2 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>京东</h1>
+
+                    <p>京东（股票代码：JD），中国自营式电商企业，创始人刘强东担任京东集团董事局主席兼首席执行官。
+</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="https://www.jd.com/?cu=true&utm_source=baidu-pinzhuan&utm_medium=cpc&utm_campaign=t_288551095_baidupinzhuan&utm_term=0f3d30c8dba7459bb52f2eb5eba8ac7d_0_518c10c5a5df40ab9a3fa5fd6b555c49" target="_blank"
+                          role="button">点我进入</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/苏宁.jpg" alt="3 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>苏宁易购</h1>
+
+                    <p>苏宁易购，是苏宁云商集团股份有限公司旗下新一代B2C网上购物平台，现已覆盖传统家电、3C电器、日用百货等品类。
+</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="https://www.suning.com/?utm_source=uc&utm_medium=mingzhan&utm_campaign=%E5%93%81%E7%89%8C%E8%AF%8D-%E8%8B%8F%E5%AE%81%E6%98%93%E8%B4%AD&utm_content=50biaoti&utm_term=u8107837.c0.g0.k72857644741.a6098102170.pb" target="_blank"
+                          role="button">点我进入</a></p>
+                </div>
+            </div>
+        </div>
+        
+       
+    <a class="left carousel-control" href="#ad-carousel" data-slide="prev"><span
+            class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#ad-carousel" data-slide="next"><span
+            class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+
+
+<!-- 主要内容 -->
+<div class="container summary">
+
+
+
+
+
+
+    <!-- 简介 -->
+    <div class="row" id="summary-container">
+        <div class="col-md-4">
+            <figure class="text4">
+<img class="img-circle" src="images/淘宝.jpg" alt="chrome">
+</figure>
+
+
+
+            <h2>淘宝</h2>
+
+            <p>淘宝网是亚太地区较大的网络零售、商圈，由阿里巴巴集团在2003年5月创立。
+</p>
+
+            <p><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+
+        </div>
+        <div class="col-md-4">
+        <figure class="text4">
+            <img class="img-circle" src="images/京东logo.jpg" alt="firefox">
+            </figure>
+
+            <h2>京东</h2>
+
+            <p>京东商城手机版是中国最大的综合网购平台，京东手机版正品行货、机打发票、售后上门取件、省钱又放心</p>
+
+            <p><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+        </div>
+        <div class="col-md-4">
+        <figure class="text4">
+            <img class="img-circle" src="images/苏宁logo.jpg" alt="safari">
+            </figure>
+
+            <h2>苏宁易购</h2>
+
+            <p>苏宁易购手机版客户端整合苏宁线上线下资源,优化用户体验,苏宁易购网上商城官网为您呈现百货、电器、图书、虚拟等丰富的商品品类。</p>
+
+            <p><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+        </div>
+    </div>
+    
+    
+    
+
+
+    <!-- 特性 -->
+
+    <hr class="feature-divider">
+
+    <ul class="nav nav-tabs" role="tablist" id="feature-tab">
+        <li class="active"><a href="#tab-chrome" role="tab" data-toggle="tab">阿里巴巴</a></li>
+        <li><a href="#tab-firefox" role="tab" data-toggle="tab">京东</a></li>
+        <li><a href="#tab-safari" role="tab" data-toggle="tab">苏宁易购</a></li>
+        
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab-chrome">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">阿里巴巴<span
+                            class="text-muted">阿里巴巴为全球领先的小企业电子商务公司，也是阿里巴巴集团的旗舰业务。
+</span></h2>
+
+                    <p class="lead">通过旗下三个交易市场协助世界各地数以百万计的买家和供应商从事网上生意。三个网上交易市场包括：集中服务全球进出口商的国际交易市场、集中国内贸易的中国交易市场，以及透过一家联营公司经营、促进日本外销及内销的日本交易市场</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/阿里巴巴1.jpg"
+                         alt="Chrome">
+                         
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-firefox">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/京东1.jpg"
+                         alt="Firefox">
+                </div>
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">京东 <span class="text-muted">京东（JD.com 
+
+）是中国一家自营式B2C购物网站，创始人刘强东担任京东集团CEO。</span>
+                    </h2>
+
+                    <p class="lead"> 2018年2月，英国品牌价值咨询公司Brand Finance发布“ 2018年全球品牌500强”报告，京东位居第65名。 2018年2月23日，步步高与京东就智慧零售等签署战略合作框架协议，向京东转让5%股份。
+</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-safari">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">苏宁易购 <span class="text-muted">成立于2009年，苏宁电器就开始了长达10年的电子商务研究</span></h2>
+
+                    <p class="lead">2018年1月14日，苏宁云商发布公告，拟计划将“苏宁易购”这一苏宁智慧零售的渠道品牌名称升级为公司名称，对公司中文名称、英文名称、证券简称等拟进行变更。</p>
+                </div>
+                <div class="col-md-5">
+                    <figure class="text1">
+ <img class="feature-image img-responsive" src="images/苏宁1.jpg">
+
+<figcaption>
+</figcaption>
+</figure>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 关于 -->
+    <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+                    <h4 class="modal-title" id="modal-label">关于</h4>
+                </div>
+                <div class="modal-body">
+                    <p>电子商务是以信息网络技术为手段，以商品交换为中心的商务活动；也可理解为在互联网（Internet）、企业内部网（Intranet）和增值网（VAN，Value Added Network）上以电子交易方式进行交易活动和相关服务的活动，是传统商业活动各环节的电子化、网络化、信息化。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p class="pull-right"><a href="#top">回到顶部</a></p>
+
+        <p>2018 </p>
+    </footer>
+
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('#ad-carousel').carousel();
+        $('#menu-nav .navbar-collapse a').click(function (e) {
+            var href = $(this).attr('href');
+            var tabId = $(this).attr('data-tab');
+            if ('#' !== href) {
+                e.preventDefault();
+                $(document).scrollTop($(href).offset().top - 70);
+                if (tabId) {
+                    $('#feature-tab a[href=#' + tabId + ']').tab('show');
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
